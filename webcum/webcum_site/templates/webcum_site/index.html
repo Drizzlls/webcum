@@ -108,9 +108,17 @@
                             <div class="mt-20"></div>
                             <p class="title-anim">Работай в удобное для тебя время и в комфортных условиях студии</p>
                             <div class="mt-40 title-anim">
-                                <a class="btn-main" href="#" data-scroll-nav="1">О нас</a>
+                                <a class="btn-main" href="#" data-scroll-nav="7">Связаться с нами</a>
                             </div>
 
+                            <div class="mt-5">
+                                <h4>Варианты сотрудничества</h4>
+                                <ul>
+                                    <li>Работа в студии</li>
+                                    <li>Удаленная работа</li>
+                                    <li>Предоставляем жилье</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -659,11 +667,11 @@
                                 <p>Оставьте заявку и мы с Вами свяжимся</p></div>
                   <div class="form-group">
                                 <label for="inputName">Имя</label>
-                                <input type="text" class="form-control" id="inputName" name="name" placeholder="Ваше имя">
+                                <input type="text" class="form-control" id="inputName" name="name" placeholder="Ваше имя" required>
                               </div>
                             <div class="form-group">
                                 <label for="inputAddress">Телефон</label>
-                                <input type="text" class="form-control" id="inputAddress" name="phone" placeholder="+7(999) 999-99-99">
+                                <input type="text" class="form-control" id="inputAddress" name="phone" placeholder="+7(999) 999-99-99" required>
                               </div>
 
                             <button type="submit" class="btn-main">Отправить</button>
@@ -758,6 +766,21 @@ rangeInputs.forEach(input => input.addEventListener('change', calculateScore))
 rangeInputs.forEach(input => input.addEventListener('input', calculateScore))
 
     </script>
+
+<style>
+   @media screen and (max-width: 900px) {
+  .square {
+    display: none;
+  }
+  .title-anim{
+  font-size:1.3em!important;
+  }
+  .email-link{
+  display:none;
+  }
+}
+
+</style>
 </body>
 
 </html>
